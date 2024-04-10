@@ -405,6 +405,7 @@ pre {
   justify-content: end;
   align-items: left;
   flex-direction: column;
+  filter: drop-shadow(0  0 50px rgba(82, 82, 82, 0.149));
 }
 
 .serviceCard:last-child {
