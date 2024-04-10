@@ -1197,8 +1197,21 @@ h4 {
     justify-content: center;
     background: none;
     align-items: center;
+  
   }
   
+  .heroTitle{
+    text-align: center;
+  }
+
+  .p{
+    text-align: center;
+  }
+
+  .heroHeading{
+    text-align: center;
+  }
+
   .lady{
     position: absolute;
     left: inherit;
@@ -1246,6 +1259,8 @@ h4 {
   .contentLeft {
     flex: 1 0 100%;
     padding: 15px;
+    
+    align-items: center;
   }
 
   .profile1 {
