@@ -113,10 +113,11 @@ body {
 }
 
 .center {
-  font-size: medium;
+  font-size: small;
   display: flex;
   gap: 18px;
   flex: 0 0 auto;
+  flex-wrap: wrap;
 }
 
 .navLink {
@@ -133,7 +134,7 @@ body {
 }
 
 .btnStart {
-  padding: 20px 30px;
+  padding: 10px 10px;
   background-color: var(--primaryColorOrange);
   border-radius: 50px;
   outline: none;
@@ -661,6 +662,12 @@ h4 {
   position: absolute;
 }
 
+@media (max-width : 300px) {
+    .center{
+        flex-flow: column;
+    }
+}
+
 @media (min-width : 1300px) {
   .heroRightInnterContainer{
     width: 80%;
@@ -745,6 +752,10 @@ h4 {
 }
 
 @media (max-width: 768px) {
+.contentLeft{
+    flex: 1 0 100%;
+    padding: 15px;
+}
   .profile1{
     width: 100%;
   }
