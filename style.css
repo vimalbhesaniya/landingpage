@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --primaryColorOrange: #FF7F5C;
-  --primaryColorGreen: #05796B;
+  --primaryColorOrange: #ff7f5c;
+  --primaryColorGreen: #05796b;
   --fontWhite: white;
   --fontBlack: black;
   --fontSecendory: #757095;
   --secendory: #8593a3;
   --bgSecendory: rgb(235, 235, 235);
-  --cardBg : #F8F9FD;
+  --cardBg: #f8f9fd;
 }
 
 * {
@@ -28,10 +28,10 @@ body {
   position: relative;
 }
 
-.navCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero {
@@ -264,14 +264,18 @@ body {
   display: none;
 }
 
+.cardContainer {
+  width: 100%;
+  height: auto;
+}
+
 .counter {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-flow: wrap;
-  gap: 50px;
   width: 90%;
+  flex-wrap: wrap;
 }
 
 .countTitle {
@@ -287,7 +291,7 @@ body {
 
 .countLeft {
   display: flex;
-  flex: 0 0 50%;
+  flex: 1 0 150px;
   gap: 5px;
   justify-content: center;
   align-items: baseline;
@@ -295,7 +299,7 @@ body {
 }
 
 .countRight {
-  flex: 0 0 50%;
+  flex: 1 0 150px;
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -378,7 +382,7 @@ body {
 }
 
 .g-5 {
-  gap: 1%;
+  gap: 10px;
 }
 
 .rg-5 {
@@ -411,7 +415,7 @@ pre {
   justify-content: end;
   align-items: left;
   flex-direction: column;
-  filter: drop-shadow(0  0 50px rgba(82, 82, 82, 0.149));
+  filter: drop-shadow(0 0 50px rgba(82, 82, 82, 0.149));
 }
 
 .serviceCard:last-child {
@@ -638,7 +642,6 @@ h4 {
 .time2 {
   font-size: small;
   color: var(--primaryColorGreen);
-
 }
 
 .round {
@@ -674,7 +677,7 @@ h4 {
   top: 20%;
 }
 
-.appContainer{
+.appContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -684,13 +687,13 @@ h4 {
   flex-direction: column;
 }
 
-.appHeading{
+.appHeading {
   font-size: 1cqmax;
   font-weight: 600;
   color: var(--primaryColorOrange);
 }
 
-.appTitle{
+.appTitle {
   width: 50%;
   font-size: 2cqmax;
   text-align: center;
@@ -698,13 +701,13 @@ h4 {
   line-height: 33px;
 }
 
-.appCaption{
+.appCaption {
   color: var(--fontSecendory);
   font-size: 1.5cqmax;
   text-align: center;
 }
 
-.buttons{
+.buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -714,9 +717,9 @@ h4 {
   gap: 15px;
 }
 
-.btnApple{
-  flex:0 0 150px;
-  padding: 17px 25px ;
+.btnApple {
+  flex: 0 0 150px;
+  padding: 17px 25px;
   outline: none;
   font-size: 1.3cqmax;
   text-align: center;
@@ -728,20 +731,19 @@ h4 {
   background: var(--primaryColorOrange);
 }
 
-.btnAndroid{
+.btnAndroid {
   text-align: center;
   font-size: 1.3cqmax;
   border-radius: 50px;
   white-space: nowrap;
   flex: 0 0 150px;
-  padding: 17px 25px ;
+  padding: 17px 25px;
   color: var(--fontWhite);
   filter: drop-shadow(0 40px 50px #137c678a);
   background: var(--primaryColorGreen);
 }
 
-
-.aboutSection{
+.aboutSection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -751,17 +753,16 @@ h4 {
   flex-flow: wrap;
 }
 
-.aboutLeft{
+.aboutLeft {
   flex: 1 0 40vh;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-.aboutChild{
+.aboutChild {
   display: flex;
   justify-content: center;
   align-items: left;
@@ -769,7 +770,7 @@ h4 {
   width: 100%;
 }
 
-.aboutRight{
+.aboutRight {
   flex: 1 0 40vh;
   height: 100%;
   gap: 50px;
@@ -781,7 +782,7 @@ h4 {
   text-align: left !important;
 }
 
-.aboutCard{
+.aboutCard {
   width: 400px;
   height: 480px;
   position: relative;
@@ -789,50 +790,50 @@ h4 {
   border-radius: 20px;
 }
 
-.aboutTitle{
+.aboutTitle {
   font-size: 2.2cqmax;
   width: 100%;
 }
 
-.vectore7{
+.vectore7 {
   position: absolute;
   right: -16px;
   top: -18px;
 }
 
-.vectore8{
+.vectore8 {
   position: absolute;
   bottom: -120px;
-  right:  50%;
+  right: 50%;
   z-index: 1000;
 }
 
-.lady{
+.lady {
   position: absolute;
   bottom: 0;
   left: -27px;
 }
 
-.imgCard{
+.imgCard {
   z-index: 1;
   position: absolute;
   bottom: -126px;
   right: -130px;
 }
 
-#btnGreen{
+#btnGreen {
   width: 200px !important;
   padding: 10px !important;
 }
 
-.aboutCaption{
+.aboutCaption {
   font-size: 0.9rem;
   width: 100%;
   color: var(--fontSecendory);
   font-weight: 300;
 }
 
-.memberShipSection{
+.memberShipSection {
   width: 80%;
   position: relative;
   display: flex;
@@ -842,16 +843,16 @@ h4 {
   flex-direction: column;
 }
 
-.memberShipContainer{
+.memberShipContainer {
   width: 70%;
   min-height: 800px;
   display: flex;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.memberShipHeader{
+.memberShipHeader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -859,18 +860,18 @@ h4 {
   gap: 20px;
 }
 
-.memberShipTitle{
+.memberShipTitle {
   font-size: 2rem;
   text-align: center;
 }
 
-.mBG{
+.mBG {
   position: absolute;
   top: 29%;
   width: 90%;
 }
 
-.memberShipCaption{
+.memberShipCaption {
   font-size: 0.9rem;
   width: 100%;
   color: var(--fontSecendory);
@@ -878,7 +879,7 @@ h4 {
   text-align: center;
 }
 
-.memberShipCards{
+.memberShipCards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -887,13 +888,13 @@ h4 {
   margin-top: 80px;
 }
 
-.memberShipCardLeft{
+.memberShipCardLeft {
   width: 100%;
-  max-width:300px;
+  max-width: 300px;
   border-radius: 20px;
   gap: 30px;
   max-height: 700px;
-  background-color:var(--fontWhite);
+  background-color: var(--fontWhite);
   filter: drop-shadow(0 0 50px rgba(0, 0, 0, 0.202));
   display: flex;
   align-items: left;
@@ -901,65 +902,65 @@ h4 {
   padding: 25px 30px;
 }
 
-.memberShipCardRight{
+.memberShipCardRight {
   width: 100%;
   max-width: 300px;
   max-height: 700px;
   border-radius: 20px;
   filter: drop-shadow(0 40px 50px #137c678a);
-
   display: flex;
   align-items: left;
   flex-direction: column;
   background-color: var(--primaryColorGreen);
   gap: 30px;
   padding: 25px 30px;
+  position: relative;
 }
 
-.mTitlemain{
+.mTitlemain {
   color: var(--primaryColorGreen);
 }
 
-.white{
+.white {
   color: var(--fontWhite) !important;
 }
 
-.bgwhite{
+.bgwhite {
   background-color: var(--fontWhite) !important;
   color: black !important;
   font-size: 1rem;
   font-weight: 500 !important;
 }
 
-.mtitleMonth{
+.mtitleMonth {
   color: var(--secendory);
   font-weight: 300;
 }
 
-.mTitle{
+.mTitle {
   font-size: 64px;
   font-weight: 400;
 }
 
-.mCardCaption{
+.mCardCaption {
   font-size: 0.8rem;
-  color:#8593a3;
+  color: #8593a3;
   font-weight: 300;
 }
 
-.line{
+.line {
   width: 300px;
   height: 1px;
   margin-top: 40px;
   background-color: rgba(169, 169, 169, 0.23);
 }
 
-.chkbox{
+.chkbox {
   margin-top: 40px;
   max-width: 100%;
 }
 
-.btnJoin{
+.btnJoin {
   width: 100%;
   outline: none;
   background: transparent;
@@ -971,69 +972,79 @@ h4 {
   font-size: 1rem;
 }
 
-@media (max-width :500px) {
-
-  .btnJoin{
+@media (max-width: 500px) {
+  .btnJoin {
     padding: 16px 10px;
   }
-  .svgImg2{
+  .svgImg2 {
     width: 100% !important;
   }
-.aboutRight{
-  padding: 0 0px;
-  margin-top: 100px;
-}
+  .aboutRight {
+    padding: 0 0px;
+    margin-top: 100px;
+  }
 
-  .appContainer{
+  .appContainer {
     width: 98% !important;
   }
-  .appTitle{
+  .appTitle {
     width: 95% !important;
   }
-  .step{
+  .step {
     flex: 0 0 100%;
   }
 }
 
-@media (max-width: 300px)  {
-  .step{
-    flex: 0 0 100%;
+@media (max-width: 300px) {
+  .circle {
+    height: 100px;
+    width: 100px;
   }
-  .serviceCard{
+
+  .badge {
+    width: 40px;
+    height: 40px;
+  }
+  .step {
+    flex: 0 0 100% !important;
+  }
+  .stepTitle {
+    font-size: 17px;
+  }
+  .serviceCard {
     flex: 1 0 90%;
   }
-  .btnGreen{
+  .btnGreen {
     padding: 10px;
   }
-  .profile1{
+  .profile1 {
     height: auto;
     border-radius: 10px;
   }
   .center {
     flex-flow: column;
   }
-  .profileTime{
+  .profileTime {
     justify-content: center;
     width: 100%;
   }
 }
 
-@media (max-width : 1179px) {
-
-  .svgImg2{
+@media (max-width: 1179px) {
+  .svgImg2 {
     height: 50%;
   }
-  .aboutRight{
+  .aboutRight {
     margin-top: 100px !important;
   }
-    .aboutSection{
-      flex-flow: column;
-      margin-top: 300px;
-    }
+  .aboutSection {
+    flex-flow: column;
+    margin-top: 300px;
+  }
 }
 
 @media (min-width: 1300px) {
-  #btnGreen{
+  #btnGreen {
     white-space: nowrap;
   }
   .heroRightInnterContainer {
@@ -1049,33 +1060,38 @@ h4 {
   margin-top: 170px;
 }
 
+@media (max-width: 906px) {
+  .contentRight {
+    margin-top: 125px;
+  }
+}
+
 @media (max-width: 992px) {
+  .feedBackRight {
+    padding: 100px 0px !important;
+  }
 
-    .feedBackRight{
-        padding: 100px 0px !important;
-    }
-
-  .mBG{
+  .mBG {
     display: none;
   }
 
-  .line{
+  .line {
     width: 100%;
   }
 
-  .memberShipCards{
+  .memberShipCards {
     flex-flow: column;
   }
 
-  .aboutRight{
+  .aboutRight {
     margin-top: 95px;
   }
 
-  .aboutLeft{
+  .aboutLeft {
     margin-top: 100px;
   }
 
-  .appTitle{
+  .appTitle {
     width: 60%;
   }
 
@@ -1148,114 +1164,109 @@ h4 {
 }
 
 @media (max-width: 768px) {
-
-
-
-  .memberShipContainer{
+  .memberShipContainer {
     width: 98%;
   }
 
-  .memberShipSection{
+  .memberShipSection {
     width: 90%;
   }
 
-  .memberShipSection{
+  .memberShipSection {
     margin-top: 250px;
   }
 
-  .aboutChild{
-
+  .aboutChild {
     align-items: center;
   }
 
-  .processSteps{
+  .processSteps {
     gap: 30px;
   }
 
-  .aboutRight{
+  .aboutRight {
     align-items: center;
     gap: 10px;
     padding: 0 0px;
-    text-align: center  ;
+    text-align: center;
   }
 
-  .aboutTitle{
+  .aboutTitle {
     width: 90%;
     text-align: center;
   }
 
-  .aboutCaption{
+  .aboutCaption {
     width: 90%;
     text-align: center;
   }
-  
-  .vectore8{
+
+  .vectore8 {
     display: none;
   }
 
-  .aboutSection{
+  .aboutSection {
     gap: 17%;
     margin-top: 60%;
   }
 
-  .aboutLeft{
+  .aboutLeft {
     justify-content: center;
   }
 
-  .aboutCard{
+  .aboutCard {
     display: flex;
     justify-content: center;
     background: none;
     align-items: center;
-  
   }
-  
-  .heroTitle{
+
+  .heroTitle {
     text-align: center;
   }
 
-  .p{
+  .p {
     text-align: center;
   }
 
-  .heroHeading{
+  .heroHeading {
     text-align: center;
   }
 
-  .lady{
+  .lady {
     position: absolute;
     left: inherit;
     bottom: 0;
     width: 92%;
   }
 
-  .imgCard{
+  .imgCard {
     position: absolute;
     bottom: -256px;
-    right:  inherit;
+    right: inherit;
     width: 100%;
   }
 
-  .aboutCaption{
+  .aboutCaption {
     text-align: center !important;
   }
 
-  .logoContainer{
+  .logoContainer {
     gap: 25px;
   }
- 
-  .step{
+
+  .step {
     flex: 0 0 250px;
   }
-  .counter{
+  .counter {
     justify-content: center;
   }
-  .countLeft{
+  .countLeft {
     flex: 1 0 80%;
   }
 
-  .countRight{
-    flex: 1  0 80%;
+  .countRight {
+    flex: 1 0 80%;
   }
 
   .heroRightInnterContainer {
@@ -1269,7 +1280,7 @@ h4 {
   .contentLeft {
     flex: 1 0 100%;
     padding: 15px;
-    
+
     align-items: center;
   }
 
@@ -1277,7 +1288,7 @@ h4 {
     width: 100%;
   }
 
-  .profileImage{
+  .profileImage {
     width: 25px;
     height: 25px;
   }
@@ -1286,7 +1297,7 @@ h4 {
     width: 100%;
     left: 0;
   }
-  
+
   .hero {
     width: auto;
   }
