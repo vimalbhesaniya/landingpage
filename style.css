@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --primaryColorOrange: #ff5c08;
-  --primaryColorGreen: #137c67;
+  --primaryColorOrange: #FF7F5C;
+  --primaryColorGreen: #05796B;
   --fontWhite: white;
   --fontBlack: black;
   --fontSecendory: #757095;
@@ -26,6 +26,12 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
+}
+
+.navCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero {
@@ -93,7 +99,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 75%;
   height: auto;
 }
 
@@ -1044,6 +1050,10 @@ h4 {
 }
 
 @media (max-width: 992px) {
+
+    .feedBackRight{
+        padding: 100px 0px !important;
+    }
 
   .mBG{
     display: none;

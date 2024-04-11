@@ -1,0 +1,42 @@
+.footerCard {
+    width: 80%;
+    height: 420px;
+    background-color: var(--primaryColorGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 16px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardHeader{
+    font-size: 2.5rem;
+    width: 60%;
+    text-align: center;
+    color: var(--fontWhite);
+}
+
+.patternSvg{
+    position: absolute;
+    left: 160px;
+    top: 100px;
+}
+
+.curveSvg{
+    position: absolute;
+    right: 100px;
+    top: 70px;
+}
+
+#startNowBtn{
+    padding: 20px 30px;
+}
+
+.curveSvgVerticle{
+    position: absolute;
+    rotate: 90deg;
+    left: 30px;
+    bottom: 70px;
+}
