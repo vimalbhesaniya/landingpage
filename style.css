@@ -38,10 +38,11 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.925);
+  background-color: rgba(255, 255, 255, 0.444);
   margin-bottom: 100px;
   z-index: 10000;
-  backdrop-filter: blur(30%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .hero {
@@ -56,7 +57,7 @@ body {
 .contentRight {
   flex: 1 0 50vh;
   display: flex;
-  justify-content: center;
+  margin-top: 100px;
   position: relative;
   padding-right: 50px;
   flex-direction: column;
@@ -202,7 +203,7 @@ a {
 
 .vector1 {
   position: absolute;
-  top: 0;
+  top: 30px;
   right: 15px;
 }
 
@@ -269,7 +270,7 @@ a {
 .p {
   color: var(--fontSecendory);
   font-weight: 300;
-  font-size: 1.3cqmax;
+  font-size: 22px;
   line-height: 2;
 }
 
@@ -731,7 +732,7 @@ h4 {
   font-size: var(--H1);
   text-align: center;
   font-weight: 600;
-  line-height: 33px;
+  line-height: 40px;
 }
 
 .appCaption {
@@ -1013,6 +1014,12 @@ h4 {
   .memberShipTitle{
     margin-top: 90px;
   }
+
+  #free{
+
+    text-align: center;
+    font-size: 10px;
+  }
   .btnJoin {
     padding: 16px 10px;
   }
@@ -1040,8 +1047,15 @@ h4 {
 }
 
 @media (max-width: 300px) {
+
+  .aboutChild {
+    margin-top: 150px;.aboutChild {
+      align-items: center;
+    }  
+  }
+
   .memberShipTitle{
-    margin-top: 120px;
+    margin-top: 215px;
   }
 
   .circle {
@@ -1432,7 +1446,7 @@ h4 {
     position: relative;
     top: 50% !important;
     left: 0;
-    height: 56%;
+    height: 85%;
     width: 70%;
   }
 
