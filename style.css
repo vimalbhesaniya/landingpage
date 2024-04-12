@@ -32,6 +32,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(233, 251, 255, 0.423);
+  margin-bottom: 100px;
+  backdrop-filter: blur(10px);
+  z-index: 10000;
 }
 
 .hero {
@@ -39,7 +46,8 @@ body {
   min-height: 700px;
   display: flex;
   flex-flow: wrap;
-  margin-top: 50px;
+  margin-top: 200px;
+
 }
 
 .contentRight {
@@ -126,6 +134,10 @@ body {
   flex-wrap: wrap;
 }
 
+.mobileNavlink .navLink a {
+  color: white !important;
+}
+
 .navLink {
   display: flex;
   justify-content: center;
@@ -133,6 +145,11 @@ body {
   gap: 10px;
   flex-wrap: wrap;
   flex-flow: wrap;
+}
+
+a {
+  color: rgb(34, 32, 32);
+  text-decoration: none;
 }
 
 .left {
@@ -155,6 +172,18 @@ body {
   align-items: center;
   gap: 35px;
   flex: 0 0 auto;
+}
+
+.sidebarBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  flex: 0 0 auto;
+}
+
+.sidebarBtns .text {
+  color: white !important;
 }
 
 .text {
@@ -194,7 +223,6 @@ body {
   align-items: center;
   position: relative;
   width: 100%;
-  max-width: 100%;
 }
 
 .m-5 {
@@ -517,6 +545,7 @@ h4 {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  margin-top: 80px;
 }
 
 .circle {
@@ -805,7 +834,7 @@ h4 {
   position: absolute;
   bottom: -120px;
   right: 50%;
-  z-index: 1000;
+  z-index: -1;
 }
 
 .lady {
@@ -850,6 +879,10 @@ h4 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.menuIcon {
+  display: none;
 }
 
 .memberShipHeader {
@@ -976,9 +1009,11 @@ h4 {
   .btnJoin {
     padding: 16px 10px;
   }
+
   .svgImg2 {
     width: 100% !important;
   }
+
   .aboutRight {
     padding: 0 0px;
     margin-top: 100px;
@@ -987,9 +1022,11 @@ h4 {
   .appContainer {
     width: 98% !important;
   }
+
   .appTitle {
     width: 95% !important;
   }
+
   .step {
     flex: 0 0 100%;
   }
@@ -1005,25 +1042,32 @@ h4 {
     width: 40px;
     height: 40px;
   }
+
   .step {
     flex: 0 0 100% !important;
   }
+
   .stepTitle {
     font-size: 17px;
   }
+
   .serviceCard {
     flex: 1 0 90%;
   }
+
   .btnGreen {
     padding: 10px;
   }
+
   .profile1 {
     height: auto;
     border-radius: 10px;
   }
+
   .center {
     flex-flow: column;
   }
+
   .profileTime {
     justify-content: center;
     width: 100%;
@@ -1034,9 +1078,11 @@ h4 {
   .svgImg2 {
     height: 50%;
   }
+
   .aboutRight {
     margin-top: 100px !important;
   }
+
   .aboutSection {
     flex-flow: column;
     margin-top: 300px;
@@ -1047,6 +1093,7 @@ h4 {
   #btnGreen {
     white-space: nowrap;
   }
+
   .heroRightInnterContainer {
     width: 80%;
   }
@@ -1067,6 +1114,26 @@ h4 {
 }
 
 @media (max-width: 992px) {
+  .menuIcon {
+    display: block;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .center {
+    display: none;
+  }
+
+
+  .container{
+    width: 100%;
+  }
+  .navbar {
+    gap: 20px;
+    width: 90% !important;
+  }
   .feedBackRight {
     padding: 100px 0px !important;
   }
@@ -1110,6 +1177,7 @@ h4 {
   .profile1 {
     width: 100%;
   }
+
   .section {
     margin-top: 250px;
   }
@@ -1121,17 +1189,21 @@ h4 {
   .vector2 {
     display: none;
   }
+
   .contentRight {
     padding-right: 0;
     align-items: center;
   }
+
   .h4 {
     font-size: 1.7cqmax;
   }
+
   .leftContent {
     width: 90%;
     justify-content: center;
   }
+
   .processCaption {
     width: 70%;
   }
@@ -1141,9 +1213,11 @@ h4 {
   .contentLeft {
     flex: 1 0 40vh;
   }
+
   .contentRight {
     flex: 1 0 40vh;
   }
+
   .leftContent {
     width: 100%;
   }
@@ -1258,9 +1332,11 @@ h4 {
   .step {
     flex: 0 0 250px;
   }
+
   .counter {
     justify-content: center;
   }
+
   .countLeft {
     flex: 1 0 80%;
   }
@@ -1308,9 +1384,11 @@ h4 {
     align-items: center;
     height: auto;
   }
+
   .svg1 {
     display: none;
   }
+
   .leftContent {
     width: 90%;
     justify-content: center;
@@ -1319,6 +1397,7 @@ h4 {
   .contentRight {
     flex: 1 0 90%;
   }
+
   .processCaption {
     width: 90%;
   }
@@ -1338,16 +1417,42 @@ h4 {
   .h2 {
     width: 90%;
   }
+
   .svgImg1 {
-    height: 120%;
+    height: calc(100% + 60px);
+  }
+
+
+  .container {
+    width: 100%;
   }
 
   .navbar {
     gap: 20px;
-    justify-content: center;
+    width: 90%;
   }
+
 
   .btnGreen {
     width: 60%;
+  }
+}
+
+
+@media only screen and (max-width : 850px) {
+  
+
+}
+
+@media only screen and (min-width : 850px) {
+  .mobileSidebar {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width : 1180px) {
+  .aboutChild {
+    text-align: center !important;
+    align-items: center;
   }
 }
