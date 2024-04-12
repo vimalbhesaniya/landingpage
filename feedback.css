@@ -14,7 +14,7 @@
 }
 
 .feedbackTitle{
-    font-size: 2rem;
+    font-size: var(--H1);
 }
 
 .feedBackCards{
@@ -53,7 +53,7 @@
 }
 
 .feedBackCaption{
-    font-size: 1.4rem;
+    font-size: var(--Caption);
     font-weight: 600;
 }
 
@@ -90,6 +90,115 @@
     top: 30px;
 }
 
+.feedbackProfile{
+    width: 495.43px;
+    height: 593px;
+    position: relative;
+    padding:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.patternFeedBACK{
+    position: absolute;
+    right: 10px;
+    top: 17px;
+
+}
+
+
+.cardFeedBack{
+    width: 402px;
+    height: 479px;
+    border-radius: 16px;
+    background: #E8F2FF;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+overflow-x: scroll;
+}
+
+.ladyFeedBack{
+    scroll-snap-align: center;
+    mix-blend-mode: darken;
+    height: 100% ;
+    width: 100%;
+  
+
+}
+
+.animateReverse{
+    animation: animateReverse 1s both;
+
+}
+
+.animate{
+    animation: animate 1s both;
+}
+
+.hide {
+    display: none !important;
+}
+
+@keyframes animate {
+    from {
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes animateReverse {
+    from {
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+#i {
+    font-size: 30px;
+}
+
+.btnCircle{
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    transition: all .1s;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.291));
+}
+
+#previus{
+    position: absolute;
+    left: 20px;
+}
+
+#next{
+    position: absolute;
+    right: 20px;
+}
+
+.btnCircle:hover{
+    filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.508));
+}
+
+.feedBackCurve{
+    position: absolute;
+    bottom: 0;
+    left: 130px;
+}
+
 @media  (max-width : 768px) {
     .feedbackTitle{
         font-size: medium;
@@ -120,6 +229,14 @@
     .textImage{
         position: sticky;
         margin-top: 25px;
+    }
+
+    .feedbackProfile{
+        width: 98%;
+    }
+
+    .feedBackCard{
+        width: 100%;
     }
 
 }

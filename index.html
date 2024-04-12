@@ -56,7 +56,7 @@
         </div>
     </header>
 
-    <section class="hero "  id="home">
+    <section class="hero " id="home">
         <div class="contentLeft">
             <span class="heroHeading">Product Growth Solution in Single Platform.</span>
             <span class="heroTitle">Managing business payments has never been easier</span>
@@ -129,7 +129,7 @@
         </div>
     </section>
 
-    <section class="cardContainer f-c m-10 bg fdColumn dCenter dFlex dAlignCenter" id="services" >
+    <section class="cardContainer f-c m-10 bg fdColumn dCenter dFlex dAlignCenter" id="services">
         <span class="fs-3">OUR SERVICES</span>
         <span class="h2 fw-1">Save Time Managing Your Business With Our Best Services</span>
         <div class="container dFlex dAlignCenter dCenter fWrap g-5 rg-5 m-5">
@@ -314,7 +314,18 @@
         <h1 class="feedbackTitle">Check what our clients are saying</h1>
         <div class="feedBackCards">
             <div class="feedBackLeft">
-                <img src="boxlogo/lady.svg" class="feedBackCard" alt="">
+                <div class="feedbackProfile">
+                    <img src="boxlogo/pattern.svg" class="patternFeedBACK" alt="">
+                    <div class="cardFeedBack" id="card">
+
+                    </div>
+                    <div class="btnCircle" id="previus"><i id="i" class="fa fa-angle-left"
+                            onclick="handlePrevieus()"></i> </div>
+                    <div class="btnCircle" id="next"> <i id="i" class="fa fa-angle-right" onclick="handleNext()"></i>
+                    </div>
+                    <img src="boxlogo/curve.svg" class="feedBackCurve" alt="">
+
+                </div>
             </div>
             <div class="feedBackRight">
                 <img src="boxlogo/quote.svg" alt="">
@@ -326,7 +337,8 @@
                     <img src="boxlogo/star.svg" alt="">
                 </div>
                 <p class="feedBackCaption">
-                    Is be upon sang fond must shew. Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now.
+                    Is be upon sang fond must shew. Really boy law county she unable her sister. Feet you off its like
+                    like six. Among sex are leave law built now.
                 </p>
                 <div class="aboutFeedBackPerson">
                     <div class="personDetail">
@@ -337,19 +349,19 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
     </section>
 
     <section class="footerCard">
-        <img src="boxlogo/curve.svg"  class="curveSvg" alt="">
+        <img src="boxlogo/curve.svg" class="curveSvg" alt="">
         <img src="boxlogo/pattern.svg" class="patternSvg" alt="">
         <h1 class="cardHeader">Discover a better way to manage purchases.</h1>
         <button class="btnStart" id="startNowBtn">Get Stared Now</button>
-        <img src="boxlogo/curve.svg"  class="curveSvgVerticle" alt="">
+        <img src="boxlogo/curve.svg" class="curveSvgVerticle" alt="">
     </section>
-    
+
     <footer class="footerContainer">
-        
+
         <div class="footerChild">
             <div class="footerMenus">
                 <h6 class="footerHeader">Danial H</h6>
@@ -369,7 +381,7 @@
                     <li>Blog</li>
                     <li>Pricing</li>
                 </ul>
-                
+
             </div>
             <div class="footerMenus">
                 <h6 class="footerHeader">Product</h6>
@@ -379,7 +391,7 @@
                     <li>Accounting</li>
                     <li>Proposal</li>
                 </ul>
-                
+
             </div>
             <div class="footerMenus">
                 <h6 class="footerHeader">Resources</h6>
@@ -389,14 +401,14 @@
                     <li>Tutorial</li>
                     <li>How to write a contract</li>
                 </ul>
-                
+
             </div>
             <div class="footerMenus">
                 <h6 class="footerHeader">Contect Us</h6>
                 <ul>
-                    <li class="dFlex g-5"> <i class="fa-regular fa-envelope"></i>  danialads12@gmail.com</li>
-                    <li class="dFlex g-5"><i class="fa-solid fa-phone-volume"></i>  +92-311-689-2135</li>
-                    
+                    <li class="dFlex g-5"> <i class="fa-regular fa-envelope"></i> danialads12@gmail.com</li>
+                    <li class="dFlex g-5"><i class="fa-solid fa-phone-volume"></i> +92-311-689-2135</li>
+
                 </ul>
             </div>
         </div>
@@ -404,17 +416,62 @@
         <div class="devider"></div>
         <h2 class="copyrightText">Copyright @ Danial Habib 2024. All Rights Reserved.</h2>
     </footer>
-
-
+    
+    
     <img src="boxlogo/ellips.svg" class="ellips" alt="">
     <script>
+        let i = 0;
+        let arr = ["array/0.svg", "array/1.png", "array/2.png", "array/3.png"]
+        let lady = document.getElementById("card");
+        lady.innerHTML = `<img src=${arr[i]} class="animate ladyFeedBack" id="image"  alt="">`
+        function toggleButtons(index) {
+            if (index == 0) {
+                let previus = document.getElementById("previus").classList.add("hide")
+            }
+            else {
+                let previus = document.getElementById("previus").classList.remove("hide")
 
-   function handleSidebar() {
-       let sidebar = document.getElementById("sidebar")
-       sidebar.classList.toggle("open")
-   }
+            }
+            
+            if (index === arr.length-1) {
+                let previus = document.getElementById("next").classList.add("hide")
+            }
+            else{
+                let previus = document.getElementById("next").classList.remove("hide")
+            }
+        }
+        function handleSidebar() {
+            let sidebar = document.getElementById("sidebar")
+            sidebar.classList.toggle("open")
+        }
         
-    </script>
+        let handleNext = () => {
+            let lady = document.getElementById("card");
+            if (i == arr.length) {
+               return
+            }
+            else{
+                i++;
+            }
+            lady.innerHTML = `<img src=${arr[i]} class="animate ladyFeedBack" id="image"  alt="">`
+            
+            toggleButtons(i)
+            console.log(i);
+        }
+        
+        let handlePrevieus = () => {
+            let lady = document.getElementById("card");
+            if (i == 0) {
+                return
+            }
+            else{
+                i--;
+            }
+            lady.innerHTML = `<img src=${arr[i]} class="animateReverse ladyFeedBack" id="image"  alt="">`
+            toggleButtons(i)
+        }
+        toggleButtons(i)
+        </script>
 </body>
 
 </html>

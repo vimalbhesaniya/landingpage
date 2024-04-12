@@ -9,6 +9,8 @@
   --secendory: #8593a3;
   --bgSecendory: rgb(235, 235, 235);
   --cardBg: #f8f9fd;
+  --H1 :40px;
+  --Caption  : 20px;
 }
 
 * {
@@ -19,6 +21,7 @@
   font-style: normal;
   scroll-behavior: smooth;
 }
+
 
 body {
   display: flex;
@@ -46,7 +49,7 @@ body {
   min-height: 700px;
   display: flex;
   flex-flow: wrap;
-  margin-top: 200px;
+  margin-top: 100px;
 
 }
 
@@ -71,11 +74,11 @@ body {
 }
 
 .heroHeading {
-  font-size: smaller;
+  font-size: 22px;
 }
 
 .heroTitle {
-  font-size: 3cqmax;
+  font-size: 60px;
   font-weight: 600;
 }
 
@@ -464,7 +467,7 @@ pre {
 }
 
 .processTitle {
-  font-size: 40px;
+  font-size: var(--H1);
   line-height: 48px;
   text-align: center;
   letter-spacing: -3%;
@@ -514,7 +517,7 @@ h4 {
 }
 
 .processCaption {
-  font-size: 20px;
+  font-size: var(--Caption);
 }
 
 .processCaption {
@@ -524,6 +527,7 @@ h4 {
   font-weight: 400;
   color: var(--fontSecendory);
   width: 50%;
+  font-size: var(--Caption);
 }
 
 .processSteps {
@@ -683,7 +687,7 @@ h4 {
 
 .badge {
   width: 40px;
-  top: -50px;
+  bottom: 95%;
   left: 21%;
   height: 40px;
   position: absolute;
@@ -724,7 +728,7 @@ h4 {
 
 .appTitle {
   width: 50%;
-  font-size: 2cqmax;
+  font-size: var(--H1);
   text-align: center;
   font-weight: 600;
   line-height: 33px;
@@ -732,7 +736,7 @@ h4 {
 
 .appCaption {
   color: var(--fontSecendory);
-  font-size: 1.5cqmax;
+  font-size: var(--Caption);
   text-align: center;
 }
 
@@ -820,7 +824,7 @@ h4 {
 }
 
 .aboutTitle {
-  font-size: 2.2cqmax;
+  font-size: var(--H1);
   width: 100%;
 }
 
@@ -856,7 +860,7 @@ h4 {
 }
 
 .aboutCaption {
-  font-size: 0.9rem;
+  font-size: var(--Caption);
   width: 100%;
   color: var(--fontSecendory);
   font-weight: 300;
@@ -867,7 +871,7 @@ h4 {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 187px;
   align-items: center;
   flex-direction: column;
 }
@@ -894,7 +898,7 @@ h4 {
 }
 
 .memberShipTitle {
-  font-size: 2rem;
+  font-size: var(--H1);
   text-align: center;
 }
 
@@ -1006,6 +1010,9 @@ h4 {
 }
 
 @media (max-width: 500px) {
+  .memberShipTitle{
+    margin-top: 90px;
+  }
   .btnJoin {
     padding: 16px 10px;
   }
@@ -1033,6 +1040,10 @@ h4 {
 }
 
 @media (max-width: 300px) {
+  .memberShipTitle{
+    margin-top: 120px;
+  }
+
   .circle {
     height: 100px;
     width: 100px;
@@ -1113,7 +1124,15 @@ h4 {
   }
 }
 
+@media (min-width : 992px) {
+  .mobileSidebar {
+    display: none !important;
+  }
+  
+}
+
 @media (max-width: 992px) {
+ 
   .menuIcon {
     display: block;
   }
@@ -1155,7 +1174,7 @@ h4 {
   }
 
   .aboutLeft {
-    margin-top: 100px;
+    margin-top: 350px;
   }
 
   .appTitle {
@@ -1311,7 +1330,10 @@ h4 {
     position: absolute;
     left: inherit;
     bottom: 0;
-    width: 92%;
+    width: 80%;
+  }
+  .vectore7{
+    top: 27px;
   }
 
   .imgCard {
@@ -1433,8 +1455,9 @@ h4 {
   }
 
 
-  .btnGreen {
+  #btnGreen {
     width: 60%;
+    margin-bottom: 256px;
   }
 }
 
@@ -1445,9 +1468,7 @@ h4 {
 }
 
 @media only screen and (min-width : 850px) {
-  .mobileSidebar {
-    display: none !important;
-  }
+ 
 }
 
 @media only screen and (max-width : 1180px) {
