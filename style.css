@@ -38,10 +38,10 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(233, 251, 255, 0.423);
+  background-color: rgba(255, 255, 255, 0.925);
   margin-bottom: 100px;
-  backdrop-filter: blur(10px);
   z-index: 10000;
+  backdrop-filter: blur(30%);
 }
 
 .hero {
@@ -110,7 +110,7 @@ body {
 }
 
 .container {
-  width: 75%;
+  width: 76%;
   height: auto;
 }
 

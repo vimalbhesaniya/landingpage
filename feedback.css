@@ -1,242 +1,247 @@
-.feedbackSection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 130px;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    margin-bottom: 100px;
+.feedbackSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 100px;
 }
 
-.feedbackHeading4{
-    color: #3734A9;
+.feedbackHeading4 {
+  color: #3734a9;
 }
 
-.feedbackTitle{
-    font-size: var(--H1);
+.feedbackTitle {
+  font-size: var(--H1);
 }
 
-.feedBackCards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    flex-flow: wrap;
-    /* background-color: rebeccapurple; */
-    height: 600px;
+.feedBackCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  flex-flow: wrap;
+  /* background-color: rebeccapurple; */
+  height: 600px;
 }
 
-.feedBackLeft{
-    width: 50%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.feedBackLeft {
+  width: 50%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.feedBackRight{
-    width: 400px;
-    height: 600px;
-    padding: 100px 50px;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;   
-    gap: 14px;
+.feedBackRight {
+  width: 400px;
+  height: 600px;
+  padding: 100px 50px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 14px;
 }
 
-.starConteiner{
-    display: flex;
-    
+.starConteiner {
+  display: flex;
 }
 
-.feedBackCaption{
-    font-size: var(--Caption);
-    font-weight: 600;
+.feedBackCaption {
+  font-size: var(--Caption);
+  font-weight: 600;
 }
 
-.feedBackName{
-    font-size: 1rem;
-    font-weight: 700;
-    margin-top: 25px;
+.feedBackName {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 25px;
 }
 
-.feedBackPosition{
-    font-size: .9rem;
-    color: #757095;
+.feedBackPosition {
+  font-size: 0.9rem;
+  color: #757095;
 }
 
-.aboutFeedBackPerson{
-    display: flex;
-    flex-direction: column;
-    gap: 4ox;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-    position: relative;
+.aboutFeedBackPerson {
+  display: flex;
+  flex-direction: column;
+  gap: 4ox;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
 }
 
-.personDetail{
-    display: flex;
-    gap: 4ox;
-    flex-direction: column;
+.personDetail {
+  display: flex;
+  gap: 4ox;
+  flex-direction: column;
 }
 
-.textImage{
-    position: absolute;
-    right: 0;
-    top: 30px;
+.textImage {
+  position: absolute;
+  right: 0;
+  top: 30px;
 }
 
-.feedbackProfile{
-    width: 495.43px;
-    height: 593px;
-    position: relative;
-    padding:50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.feedbackProfile {
+  width: 495.43px;
+  height: 593px;
+  position: relative;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.patternFeedBACK{
-    position: absolute;
-    right: 10px;
-    top: 17px;
-
+.patternFeedBACK {
+  position: absolute;
+  right: 10px;
+  top: 17px;
 }
 
-
-.cardFeedBack{
-    width: 402px;
-    height: 479px;
-    border-radius: 16px;
-    background: #E8F2FF;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-overflow-x: scroll;
+.cardFeedBack {
+  width: 402px;
+  height: 479px;
+  border-radius: 16px;
+  background: #e8f2ff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
 }
 
-.ladyFeedBack{
-    scroll-snap-align: center;
-    mix-blend-mode: darken;
-    height: 100% ;
-    width: 100%;
-  
-
+.ladyFeedBack {
+  scroll-snap-align: center;
+  mix-blend-mode: darken;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
-.animateReverse{
-    animation: animateReverse 1s both;
-
+.animateReverse {
+  animation: animateReverse 1s both;
 }
 
-.animate{
-    animation: animate 1s both;
+.animate {
+  animation: animate 1s both;
 }
 
 .hide {
-    display: none !important;
+  display: none !important;
+}
+
+.topVectore {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  left: 0;
+}
+
+.bottomVectore {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  right: 0;
 }
 
 @keyframes animate {
-    from {
-        transform: translateX(100%);
-    }
-    to{
-        transform: translateX(0%);
-    }
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes animateReverse {
-    from {
-        transform: translateX(-100%);
-    }
-    to{
-        transform: translateX(0%);
-    }
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 #i {
-    font-size: 30px;
+  font-size: 30px;
 }
 
-.btnCircle{
-    width: 60px;
-    height: 60px;
-    background: white;
-    position: absolute;
-    z-index: 1;
-    border-radius: 50%;
-    transition: all .1s;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-    filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.291));
+.btnCircle {
+  width: 60px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  transition: all 0.1s;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.291));
 }
 
-#previus{
-    position: absolute;
-    left: 20px;
+#previus {
+  position: absolute;
+  left: 20px;
 }
 
-#next{
-    position: absolute;
-    right: 20px;
+#next {
+  position: absolute;
+  right: 20px;
 }
 
-.btnCircle:hover{
-    filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.508));
+.btnCircle:hover {
+  filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.508));
 }
 
-.feedBackCurve{
-    position: absolute;
-    bottom: 0;
-    left: 130px;
+.feedBackCurve {
+  position: absolute;
+  bottom: 0;
+  left: 130px;
 }
 
-@media  (max-width : 768px) {
-    .feedbackTitle{
-        font-size: medium;
-        text-align: center !important;
-    }
+@media (max-width: 768px) {
+  .feedbackTitle {
+    font-size: medium;
+    text-align: center !important;
+  }
 
-    .feedBackCard{
-        width: 100%;
-    }
-    
-    .feedBackCards{
-        width: 100%;
-    }
+  .feedBackCard {
+    width: 100%;
+  }
 
-    .feedBackRight{
+  .feedBackCards {
+    width: 100%;
+  }
+
+  .feedBackRight {
     padding: 30px;
+  }
 
-    }
+  .feedBackLeft {
+    width: 100%;
+  }
 
-    .feedBackLeft{
-        width: 100%;
-    }
-    
-    .feedBackRight{
-        width: 80%;
-    }
-    
-    .textImage{
-        position: sticky;
-        margin-top: 25px;
-    }
+  .feedBackRight {
+    width: 80%;
+  }
 
-    .feedbackProfile{
-        width: 98%;
-    }
+  .textImage {
+    position: sticky;
+    margin-top: 25px;
+  }
 
-    .feedBackCard{
-        width: 100%;
-    }
+  .feedbackProfile {
+    width: 98%;
+  }
 
+  .feedBackCard {
+    width: 100%;
+  }
 }
