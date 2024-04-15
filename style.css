@@ -9,12 +9,20 @@
   --secendory: #8593a3;
   --bgSecendory: rgb(235, 235, 235);
   --cardBg: #f8f9fd;
-  --H1 :40px;
-  --Caption  : 20px;
+  --H1: 40px;
+  --Caption: 20px;
 }
 
+.greenCard {
+  background-color: var(--primaryColorGreen) !important;
+  color: var(--fontWhite) !important;
+}
 
-.heading{
+.btn{
+  font-size: 16px;
+}
+
+.heading {
   font-size: 40px;
 }
 
@@ -26,7 +34,6 @@
   font-style: normal;
   scroll-behavior: smooth;
 }
-
 
 body {
   display: flex;
@@ -56,7 +63,6 @@ body {
   display: flex;
   flex-flow: wrap;
   margin-top: 100px;
-
 }
 
 .contentRight {
@@ -80,7 +86,7 @@ body {
 }
 
 .heroHeading {
-  font-size: 22px;
+  font-size: var(--Caption);
 }
 
 .heroTitle {
@@ -170,8 +176,11 @@ a {
   background-color: var(--primaryColorOrange);
   border-radius: 50px;
   outline: none;
+  width: 100%;
+  max-width: 170px;
   border: none;
   color: var(--fontWhite);
+  text-align: center;
   font-weight: 300;
 }
 
@@ -179,7 +188,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 35px;
+  gap: 10px;
   flex: 0 0 auto;
 }
 
@@ -196,6 +205,7 @@ a {
 }
 
 .text {
+  white-space: nowrap;
   font-weight: 400;
 }
 
@@ -287,13 +297,16 @@ a {
 }
 
 .btnGreen {
-  padding: 12px 40px;
+  height: 55px;
   background-color: var(--primaryColorGreen);
   border: none;
   outline: none;
   margin-top: 60px;
+  font-size: 18px;
   border-radius: 50px;
-  width: 40%;
+width: 100%;
+  max-width: 189px;
+
   filter: drop-shadow(0 40px 50px #137c678a);
 }
 
@@ -303,6 +316,7 @@ a {
 
 .cardContainer {
   width: 100%;
+  position: relative;
   height: auto;
 }
 
@@ -355,17 +369,15 @@ a {
 
 .logoContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
-.bg {
-  background: url("vector.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.bgCard{
+  position: absolute;
+  right: 0;
 }
 
 .fs-3 {
@@ -460,7 +472,6 @@ pre {
   display: flex;
   justify-content: end;
   align-items: left;
-  background-color: var(--primaryColorGreen);
 }
 
 .boxLogo {
@@ -757,28 +768,28 @@ h4 {
 
 .btnApple {
   flex: 0 0 150px;
-  padding: 17px 25px;
   outline: none;
-  font-size: 1.3cqmax;
   text-align: center;
   gap: 10px;
+  height: 53px;
   border-radius: 50px;
+  font-weight: 300;
   color: var(--fontWhite);
-  white-space: nowrap;
   border: none;
   background: var(--primaryColorOrange);
 }
 
 .btnAndroid {
   text-align: center;
-  font-size: 1.3cqmax;
+  font-weight: 300;
   border-radius: 50px;
   white-space: nowrap;
   flex: 0 0 150px;
-  padding: 17px 25px;
-  color: var(--fontWhite);
+  padding: 10px;
+  height: 53px;
+  border: none;
+  outline: none;
   filter: drop-shadow(0 40px 50px #137c678a);
-  background: var(--primaryColorGreen);
 }
 
 .aboutSection {
@@ -953,7 +964,6 @@ h4 {
   display: flex;
   align-items: left;
   flex-direction: column;
-  background-color: var(--primaryColorGreen);
   gap: 30px;
   padding: 25px 30px;
   position: relative;
@@ -1015,17 +1025,19 @@ h4 {
 }
 
 @media (max-width: 500px) {
-  .memberShipTitle{
+  .memberShipTitle {
     margin-top: 90px;
   }
 
-  #free{
-
+  #free {
     text-align: center;
     font-size: 10px;
   }
   .btnJoin {
-    padding: 16px 10px;
+    padding: 16px 6px;
+    width: 100%;
+    max-width: 170px;
+    font-size: small;
   }
 
   .svgImg2 {
@@ -1051,14 +1063,14 @@ h4 {
 }
 
 @media (max-width: 300px) {
-
   .aboutChild {
-    margin-top: 150px;.aboutChild {
+    margin-top: 150px;
+    .aboutChild {
       align-items: center;
-    }  
+    }
   }
 
-  .memberShipTitle{
+  .memberShipTitle {
     margin-top: 215px;
   }
 
@@ -1142,15 +1154,18 @@ h4 {
   }
 }
 
-@media (min-width : 992px) {
+@media (min-width: 992px) {
   .mobileSidebar {
     display: none !important;
   }
-  
 }
 
 @media (max-width: 992px) {
- 
+  .logoContainer {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
   .menuIcon {
     display: block;
   }
@@ -1163,8 +1178,7 @@ h4 {
     display: none;
   }
 
-
-  .container{
+  .container {
     width: 100%;
   }
   .navbar {
@@ -1338,6 +1352,7 @@ h4 {
 
   .p {
     text-align: center;
+    font-size: medium;
   }
 
   .heroHeading {
@@ -1350,7 +1365,7 @@ h4 {
     bottom: 0;
     width: 80%;
   }
-  .vectore7{
+  .vectore7 {
     top: 27px;
   }
 
@@ -1367,6 +1382,7 @@ h4 {
 
   .logoContainer {
     gap: 25px;
+    grid-template-columns: 1fr;
   }
 
   .step {
@@ -1442,6 +1458,10 @@ h4 {
     width: 90%;
   }
 
+  :root{
+    --Caption : 16px;
+  }
+
   .svgImg1 {
     display: none;
   }
@@ -1462,7 +1482,6 @@ h4 {
     height: calc(100% + 60px);
   }
 
-
   .container {
     width: 100%;
   }
@@ -1472,24 +1491,19 @@ h4 {
     width: 90%;
   }
 
-
   #btnGreen {
     width: 60%;
     margin-bottom: 256px;
   }
 }
 
-
-@media only screen and (max-width : 850px) {
-  
-
+@media only screen and (max-width: 850px) {
 }
 
-@media only screen and (min-width : 850px) {
- 
+@media only screen and (min-width: 850px) {
 }
 
-@media only screen and (max-width : 1180px) {
+@media only screen and (max-width: 1180px) {
   .aboutChild {
     text-align: center !important;
     align-items: center;

@@ -48,6 +48,7 @@
 
 .hy{
   overflow: hidden;
+  height: 100%;
 }
 
 .starConteiner {
@@ -152,6 +153,15 @@
   bottom: 0;
   z-index: 100;
   right: 0;
+}
+
+@media (min-width : 768px) and (max-width : 992px) {
+  .memberShipSection{
+    margin-top: 350px;
+  }
+  .center{
+    font-size: 13px;
+  }
 }
 
 @keyframes animate {
