@@ -197,6 +197,19 @@ a:active{
   color: #3734a9;
 }
 
+/* .leftCurve{
+  position: absolute;
+  left: 300px;
+  top: 50px;
+}
+
+.rigthCurve{
+  position: absolute;
+  right: 300px;
+  top: 50px;
+} */
+
+
 
 
 @media only screen and (max-width: 992px) {
