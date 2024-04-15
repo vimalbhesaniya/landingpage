@@ -46,6 +46,10 @@
   gap: 14px;
 }
 
+.hy{
+  overflow: hidden;
+}
+
 .starConteiner {
   display: flex;
 }
@@ -105,7 +109,8 @@
 }
 
 .cardFeedBack {
-  width: 402px;
+  width: 100%;
+  max-width: 402px;
   height: 479px;
   border-radius: 16px;
   background: #e8f2ff;
@@ -113,7 +118,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: scroll;
 }
 
 .ladyFeedBack {
