@@ -142,7 +142,7 @@ body {
 }
 
 .center {
-  font-size: small;
+  font-size: 12px;
   display: flex;
   gap: 18px;
   flex: 0 0 auto;
@@ -915,6 +915,7 @@ h4 {
 
 .memberShipTitle {
   font-size: var(--H1);
+  
   text-align: center;
 }
 
